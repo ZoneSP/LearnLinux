@@ -1,0 +1,8 @@
+Source:Zoey_Software
+Package:helloworld
+Version:0.1.0
+Section:debug
+Priority:optional
+Architecture:amd64
+Maintainer:Zoey
+Description: Build_DEB_Tools

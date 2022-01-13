@@ -1,0 +1,6 @@
+.PHONY:all
+
+dirs:=a b c d
+
+all:
+	echo "$(foreach dir,$(dirs),$(wildcard $(dir)/*))"
