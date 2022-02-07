@@ -1,34 +1,15 @@
 #include "Sysctrl.h"
 
+typedef struct Struct_B
+{
+	int b;
+	struct Struct_B * Node;
+}B;
+
+B   List_B;
+
 int main(int argc,char *argv[])
 {
-	char ch;
-	
-	char Book_name[50] = {0};
-
-	char Loop = 0;
-
-	while((ch = getchar()) != '\n')
-	{
-		Book_name[Loop] = ch;
-		Loop++;
-	}
-
-	printf("书籍名称：%s\n",Book_name);
-
-	Loop = 0;
-	
-	while((ch = getchar()) != '\n')
-	{
-		Book_name[Loop] = ch;
-		Loop++;
-	}
-
-
-	printf("书籍名称：%s\n",Book_name);
-
-
-	
-
+	List_B.b = 10;
 	return 0;
 }
